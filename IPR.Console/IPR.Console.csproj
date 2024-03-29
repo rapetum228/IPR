@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ipr.NetworkClient\Ipr.NetworkClient.csproj" />
+    <ProjectReference Include="..\Ipr.NetworkServer\Ipr.NetworkServer.csproj" />
+    <ProjectReference Include="..\IPR.StructurePatterns\IPR.StructurePatterns.csproj" />
+  </ItemGroup>
+
+</Project>

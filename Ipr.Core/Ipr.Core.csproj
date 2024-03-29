@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Version>1.0.0.1</Version>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<IsPackable>true</IsPackable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DllLib\DllLib.csproj" />
+		<ProjectReference Include="..\Ipr.JsonXml\Ipr.JsonXml.csproj" />
+		<ProjectReference Include="..\Ipr.Linq\Ipr.Linq.csproj" />
+		<ProjectReference Include="..\IPR.StructurePatterns\IPR.StructurePatterns.csproj" />
+	</ItemGroup>
+
+</Project>

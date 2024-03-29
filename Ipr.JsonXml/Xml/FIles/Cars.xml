@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cars>
+	<car name="Lada">
+		<weight>2000</weight>
+		<speed>120</speed>
+		<price>500</price>
+		<owners>
+			<person>
+				<name>LadaOwner1</name>
+				<age>10</age>
+			</person>
+			<person>
+				<name>LadaOwner2</name>
+				<age>10</age>
+			</person>
+		</owners>
+	</car>
+	<car>
+		<weight>3000</weight>
+		<speed>100</speed>
+		<price>700</price>
+		<name>Uaz</name>
+		<owners>
+			<person>
+				<name>UazOwner1</name>
+				<age>10</age>
+			</person>
+			<person>
+				<name>UazOwner2</name>
+				<age>10</age>
+			</person>
+		</owners>
+	</car>
+</cars>
