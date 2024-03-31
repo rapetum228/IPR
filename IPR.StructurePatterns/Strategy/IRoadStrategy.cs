@@ -8,7 +8,6 @@ public interface IRoadStrategy
     void CreateRoute();
 }
 
-
 public class AutoRoad : IRoadStrategy
 {
     public void CreateRoute()

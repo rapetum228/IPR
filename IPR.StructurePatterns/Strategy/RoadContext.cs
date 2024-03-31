@@ -6,16 +6,48 @@
 /// </summary>
 public class RoadContext
 {
-    private readonly IRoadStrategy _strategy;
+    private IRoadStrategy _strategy;
 
     public RoadContext(IRoadStrategy strategy)
     {
         _strategy = strategy;
     }
+
+    public void CreateRoute()
+    {
+        _strategy.CreateRoute();
+    }
+
+    public void Set(IRoadStrategy strategy)
+    {
+        _strategy = strategy;
+    }
+}
+
+public static class StrategyClient
+{
+    public static void Start()
+    {
+        var auto = new AutoRoad();
+
+        var plane = new PlaneRoad();
+
+        var context = new RoadContext(auto);
+
+        context.CreateRoute();
+
+        context.Set(plane);
+
+        context.CreateRoute();
+    }
 }
 
 /*
- 
+
+   Стратегия — это поведенческий паттерн проектирования, который определяет семейство схожих алгоритмов и 
+               омещает каждый из них в собственный класс, после чего алгоритмы можно взаимозаменять прямо во время исполнения программы. 
+
+
  + Горячая замена алгоритмов на лету.
  + Изолирует код и данные алгоритмов от остальных классов.
  + Уход от наследования к делегированию.

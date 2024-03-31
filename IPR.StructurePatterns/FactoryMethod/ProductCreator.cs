@@ -10,8 +10,10 @@ public abstract class ProductCreator
 {
     public void Say()
     {
-        Console.WriteLine("Пошла возня");
-        Console.WriteLine(GetProduct().GetName());
+        Console.WriteLine("Пошла возня в общем для всех методе");
+        Console.WriteLine("Процес зависмый от фабричного метода:");
+        var p = GetProduct();
+        Console.WriteLine("Получили: "+ p.GetName());
     }
 
     protected abstract IProduct GetProduct();

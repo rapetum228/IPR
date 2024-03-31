@@ -2,7 +2,7 @@
 
 namespace Ipr.NetworkClient.CustomSocket;
 
-public class SocketClient
+public class SocketTcpClient
 {
     public async Task StartSocketTcpClientAsync(int port)
     {

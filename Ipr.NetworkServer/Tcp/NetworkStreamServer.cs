@@ -4,7 +4,7 @@ public static class NetworkStreamServer
 {
     public static async Task Start()
     {
-        var tcpListener = new TcpListener(IPAddress.Any, 8888);
+        var tcpListener = new TcpListener(IPAddress.Any, 9999);
        
         try
         {

@@ -1,4 +1,4 @@
-﻿namespace Ipr.NetworkClient.NetworkResearch;
+﻿namespace Ipr.NetworkClient.CustomSocket;
 
 public static class NetworkStreamClient
 {
@@ -7,7 +7,7 @@ public static class NetworkStreamClient
 
         using TcpClient tcpClient = new TcpClient();
 
-        await tcpClient.ConnectAsync("127.0.0.1", 8888);
+        await tcpClient.ConnectAsync("127.0.0.1", 9999);
 
         // получаем NetworkStream для взаимодействия с сервером
         var stream = tcpClient.GetStream();
@@ -23,7 +23,7 @@ public static class NetworkStreamClient
         if (startCommand == "go" || startCommand == "го")
         {
             var i = 1000;
-            while (i>0)
+            while (i > 0)
             {
                 i--;
                 var word = Guid.NewGuid().ToString();

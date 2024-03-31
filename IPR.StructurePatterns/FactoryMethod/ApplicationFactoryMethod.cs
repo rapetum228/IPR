@@ -2,11 +2,11 @@
 
 public class ApplicationFactoryMethod
 {
-    private ProductCreator _creator;
-
-    public void Init(string env)
+    public static void Start(string env)
     {
-        if(env == "Туалет")
+        ProductCreator _creator;
+
+        if (env.ToLower().Trim() == "туалет")
         {
             _creator = new PovidloCreator();
         }
