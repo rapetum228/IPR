@@ -10,7 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Ipr.NetworkClient\Ipr.NetworkClient.csproj" />
     <ProjectReference Include="..\Ipr.NetworkServer\Ipr.NetworkServer.csproj" />
-    <ProjectReference Include="..\IPR.StructurePatterns\IPR.StructurePatterns.csproj" />
+    <ProjectReference Include="..\IPR.StructurePatterns\IPR.Patterns.csproj" />
   </ItemGroup>
 
 </Project>

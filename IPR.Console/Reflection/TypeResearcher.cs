@@ -23,13 +23,6 @@ public class TypeResearcher
     public static async Task ShowTypeInfo(Type type)
     {
         Console.WriteLine($"Assemply: {type.Assembly.FullName}");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
-        Console.WriteLine($"");
 
         Console.WriteLine($"===============================================================================================");
         Console.WriteLine($"Метод FindMembers() возвращает массив объектов MemberInfo данного типа");
@@ -166,7 +159,7 @@ public class TypeResearcher
            parameterTypes: Type.EmptyTypes);
         
         ILGenerator ilGenerator = methodBuilder.GetILGenerator();
-        ilGenerator.Emit(OpCodes.Ldstr, "Привет, я наследник!");
+        ilGenerator.Emit(OpCodes.Ldstr, "Привет, я пидор!");
         ilGenerator.Emit(OpCodes.Call, typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }));
         ilGenerator.Emit(OpCodes.Ret);
 
